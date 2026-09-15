@@ -6,6 +6,7 @@ import Reports from './../features/reports/pages/Reports';
 import Datasets from './../features/datasets/pages/DataSet';
 import Publications from './../features/publications/pages/publications';
 import Media from './../features/media/pages/media';
+import PolarMaps from './../features/polarMaps/pages/PolarMaps';
 const AppRoutes = ({ dark, setDark }) => {
   return (
     <Routes>
@@ -18,6 +19,7 @@ const AppRoutes = ({ dark, setDark }) => {
         <Route path="/datasets" element={<Datasets dark={dark} />} />
         <Route path="/publications" element={<Publications dark={dark} />} />
         <Route path="/media" element={<Media dark={dark} />} />
+        <Route path="/map" element={<PolarMaps dark={dark} />} />
       </Route>
     </Routes>
   );
